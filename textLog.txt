@@ -1,0 +1,127 @@
+
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic
+$ mkdir Kryazhev_kw
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic
+$ cd Kryazhev_kw/
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw
+$ git init
+Initialized empty Git repository in C:/Users/KRiEG/Documents/GitHub/FinalPractic/Kryazhev_kw/.git/
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git remote add origin https://github.com/krieg1234/Kryazhev_kw.git
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ echo 'Hello world!' >> helloWorld.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git add helloWorld.txt
+warning: LF will be replaced by CRLF in helloWorld.txt.
+The file will have its original line endings in your working directory
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git commit
+[master (root-commit) 5dc25ac] Hello world was added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 helloWorld.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ fit remote -v
+bash: fit: command not found
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git remote -v
+origin  https://github.com/krieg1234/Kryazhev_kw.git (fetch)
+origin  https://github.com/krieg1234/Kryazhev_kw.git (push)
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krieg1234/Kryazhev_kw.git
+ * [new branch]      master -> master
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ code helloWorld.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   helloWorld.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git add helloWorld.txt
+warning: LF will be replaced by CRLF in helloWorld.txt.
+The file will have its original line endings in your working directory
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git co
+commit   config
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git co
+commit   config
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git commit
+[master 6ae15e7] world replaced by git
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 260 bytes | 260.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krieg1234/Kryazhev_kw.git
+   5dc25ac..6ae15e7  master -> master
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git history
+git: 'history' is not a git command. See 'git --help'.
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw (master)
+$ git log
+commit 6ae15e7cf59264083484212d040d89a8361f22c5 (HEAD -> master, origin/master)
+Author: krieg1234 <olegkrieg@gmail.com>
+Date:   Sun Sep 20 18:24:26 2020 +0400
+
+    world replaced by git
+
+commit 5dc25ac638ec744cdf5cc1d408effb5ccb5c72c0
+Author: krieg1234 <olegkrieg@gmail.com>
+Date:   Sun Sep 20 18:19:07 2020 +0400
+
+    Hello world was added
+
+
